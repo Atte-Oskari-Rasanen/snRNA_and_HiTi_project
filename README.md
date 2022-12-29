@@ -21,6 +21,14 @@ found in both project folder.
 
 Anaconda: https://docs.anaconda.com/anaconda/install/index.html
 
+
+Furthermore, the following packages are needed:
+Starcode (1.4)- https://github.com/gui11aume/starcode/releases/tag/1.4
+Mview (1.6.7) - https://sourceforge.net/projects/bio-mview/files/bio-mview/
+Cutadapt (4.2) - https://cutadapt.readthedocs.io/en/stable/installation.html
+bbmap (latest) - https://jgi.doe.gov/data-and-tools/software-tools/bbtools/bb-tools-user-guide/installation-guide/
+
+
 The SPLiT folder contains the following files:
 **Dockerfile** - contains the Parse biosciences analysis pipeline and the
 required dependencies
