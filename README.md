@@ -15,6 +15,12 @@ The analysis pipeline for snRNA-seq can be found inside the folder snRNA project
 containing separate folders based on the technology used (Scifi and SPLiT) as
 well as helper scripts inside the helper_scripts folder.
 
+Creation of separate virtual conda environments for the projects is recommended.
+To this end, the required packages are found in the environment yml-files
+found in both project folder.
+
+Anaconda: https://docs.anaconda.com/anaconda/install/index.html
+
 The SPLiT folder contains the following files:
 **Dockerfile** - contains the Parse biosciences analysis pipeline and the
 required dependencies
@@ -24,14 +30,15 @@ installed in it. Can be built using the command:
 **parse_analyse_rat.sh** - contains the script which executes the pipeline on
 the sample files
 
+**analysis_env.yml** - required packages for the analysis. To install, run
+> conda env create -f analysis_env.yml
+
 3 Parse_analyse R files:
 **1** - Preprocessing, analysis, subsetting and addition of single cell-level
 annotations
-
 **2**  - Grouping the DA cells into bins of a-syn and tagBFP. Performing DGE
 between various conditions, visualising singificantly upregulated/downregulated
 genes
-
 **3**  - DGE between conditions, Pathway analysis
 
 The helper_scripts folder contains the following scripts:
@@ -50,14 +57,11 @@ is created by merging the data. This data is reintegrated back into the Seurat
 object in the 1_Parse_analyse.R
 
 Inside Scifi folder the following files are found:
-
 **scifi5_preanalysis.py** - Preanalysis of Scifi5 data. Generation of the count matrix
-and merging the rat (oDT) data with the barcoded AAVs (WP).
-
+and merging the rat (oDT) data with the barcoded AAVs (WP)
 **scifi6_preanalysis.py** -  Preanalysis of Scifi6 data. Generation of the count matrix
 and merging the rat (oDT) data with the barcoded AAVs (WP) and categorising
-based on the given groups.
-
+based on the given groups
 **scifi5_main_analysis.R** - Main analysis run using Seurat
 
 Inside Arc-HiTi folder one can find sample characterised by folder name starting
@@ -72,3 +76,4 @@ individually in the main.py script found within each sample subfolder.
 **conda_env.yml** - The required python packages and their versions. to install,
 run the following command:
 > conda env create -f conda_env.yml
+
