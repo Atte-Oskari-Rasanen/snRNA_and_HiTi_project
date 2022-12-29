@@ -27,9 +27,11 @@ the sample files
 3 Parse_analyse R files:
 **1** - Preprocessing, analysis, subsetting and addition of single cell-level
 annotations
+
 **2**  - Grouping the DA cells into bins of a-syn and tagBFP. Performing DGE
 between various conditions, visualising singificantly upregulated/downregulated
 genes
+
 **3**  - DGE between conditions, Pathway analysis
 
 The helper_scripts folder contains the following scripts:
@@ -48,11 +50,14 @@ is created by merging the data. This data is reintegrated back into the Seurat
 object in the 1_Parse_analyse.R
 
 Inside Scifi folder the following files are found:
+
 **scifi5_preanalysis.py** - Preanalysis of Scifi5 data. Generation of the count matrix
-and merging the rat (oDT) data with the barcoded AAVs (WP)
+and merging the rat (oDT) data with the barcoded AAVs (WP).
+
 **scifi6_preanalysis.py** -  Preanalysis of Scifi6 data. Generation of the count matrix
 and merging the rat (oDT) data with the barcoded AAVs (WP) and categorising
-based on the given groups
+based on the given groups.
+
 **scifi5_main_analysis.R** - Main analysis run using Seurat
 
 Inside Arc-HiTi folder one can find sample characterised by folder name starting
