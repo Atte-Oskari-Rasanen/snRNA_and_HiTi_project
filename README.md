@@ -72,11 +72,8 @@ and merging the rat (oDT) data with the barcoded AAVs (WP) and categorising
 based on the given groups
 **scifi5_main_analysis.R** - Main analysis run using Seurat
 
-Inside Arc-HiTi folder one can find sample characterised by folder name starting
-with HITI. The folder amplicon_files contains DNA sequences of the reference
-files with the whole fluorescent protein and the Arc gene along with information
-about the primer binding sites and primer templates. In the root folder there is
-also the following files:
+Inside Arc-HiTi folder one can find samples characterised by folder name starting
+with HITI. Each HITI sample subfolder contains main.py python script for the analysis workflow of the given sample. The script calls on functions from scripts_main.py found in the root.The folder amplicon_files contains DNA sequences of the reference files with the whole fluorescent protein and the Arc gene along with information about the primer binding sites and primer templates. In the root folder there is also the following files:
 
 **scripts_main.py** - Contains all the functions and classes used for the
 analysis. The functions are called in the analysis workflows performed
