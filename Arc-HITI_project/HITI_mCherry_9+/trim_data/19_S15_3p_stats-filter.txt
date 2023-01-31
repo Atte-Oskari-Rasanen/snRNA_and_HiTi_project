@@ -1,5 +1,0 @@
-#File	/tmp/tmpw57urtor.fastq.gz	/tmp/tmpy2c7s4_c.fastq.gz
-#Total	1070416
-#Matched	532110	49.71058%
-#Name	Reads	ReadsPct
-1	532110	49.71058%
